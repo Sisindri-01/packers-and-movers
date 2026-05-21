@@ -1,0 +1,9 @@
+# robots.txt for Surya Packers and Movers
+User-agent: *
+
+Allow: /
+
+
+
+# XML Sitemap Link (Update with your actual domain name once hosted)
+Sitemap: https://www.suryamoverspackers.com/sitemap.xml

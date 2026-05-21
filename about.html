@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Surya Packers and Movers</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0B2447', // Dark Blue
+                        secondary: '#F97316', // Orange
+                        light: '#F8FAFC',
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.2); }
+        .dark-overlay { background: linear-gradient(to bottom, rgba(11, 36, 71, 0.9), rgba(11, 36, 71, 0.6)); }
+        
+        /* Scroll Reveal Animation */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-light text-gray-800">
+
+    <a href="https://wa.me/919951132666" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition duration-300 animate-float flex items-center justify-center">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 text-white">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold font-poppins flex items-center gap-2">
+                <i class="fas fa-truck-fast text-secondary"></i> Surya Packers and movers
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8 font-medium">
+                <a href="index.html" class="hover:text-secondary transition relative group">Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="text-secondary transition relative group">About
+                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-secondary"></span>
+                </a>
+                <a href="services.html" class="hover:text-secondary transition relative group">Services
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="gallery.html" class="hover:text-secondary transition relative group">Gallery
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="index.html#contact" class="hover:text-secondary transition relative group">Contact
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="index.html#quote" class="bg-secondary text-white px-6 py-2 rounded-full hover:bg-orange-600 shadow-lg shadow-orange-500/30 transition transform hover:-translate-y-1">Get Quote</a>
+            </div>
+
+            <button id="mobileMenuBtn" class="lg:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div id="mobileMenu" class="hidden lg:hidden bg-white text-primary absolute w-full top-full left-0 shadow-xl flex flex-col p-6 space-y-4 font-medium">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="text-secondary mobile-link">About</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="gallery.html" class="mobile-link">Gallery</a>
+            <a href="index.html#contact" class="mobile-link">Contact</a>
+            <a href="index.html#quote" class="bg-secondary text-white text-center py-2 rounded-lg">Get Quote</a>
+        </div>
+    </nav>
+
+    <section class="relative h-[60vh] flex items-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="About Us Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 dark-overlay"></div>
+        </div>
+        <div class="container mx-auto px-6 z-10 relative text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 reveal active">About Our Company</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto reveal active" style="transition-delay: 100ms;">Delivering trust, safety, and peace of mind with every move across India.</p>
+            <div class="mt-6 text-sm text-gray-400 font-medium reveal active" style="transition-delay: 200ms;">
+                <a href="index.html" class="hover:text-secondary transition">Home</a> <i class="fas fa-chevron-right mx-2 text-[10px]"></i> <span class="text-secondary">About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal relative">
+                <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our History" class="rounded-2xl shadow-2xl">
+                <div class="absolute -bottom-8 -right-8 bg-secondary text-white p-8 rounded-2xl shadow-xl hidden md:block border-4 border-white">
+                    <h3 class="text-4xl font-bold mb-1">2011</h3>
+                    <p class="font-medium text-sm">Year Established</p>
+                </div>
+            </div>
+            <div class="reveal">
+                <h4 class="text-secondary font-semibold uppercase tracking-wider mb-2">Our Story</h4>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">India's Most Trusted Logistics Partner</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">Started in 2011 with just two trucks and a vision, Surya Packers and Movers has grown into a nationwide network of logistics experts. We realized early on that moving isn't just about transporting boxes; it's about moving memories, careers, and lives.</p>
+                <p class="text-gray-600 mb-8 leading-relaxed">Today, we operate a massive fleet of custom-built carriers, utilizing state-of-the-art tracking technology and premium packing materials. Whether you are moving across the street or across the country, we guarantee a seamless, damage-free experience.</p>
+                
+                <div class="grid grid-cols-2 gap-6 border-t border-gray-100 pt-8">
+                    <div>
+                        <h4 class="text-3xl font-bold text-primary mb-1">15+</h4>
+                        <p class="text-sm text-gray-500 font-medium">Years in Business</p>
+                    </div>
+                    <div>
+                        <h4 class="text-3xl font-bold text-primary mb-1">10k+</h4>
+                        <p class="text-sm text-gray-500 font-medium">Successful Moves</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 reveal group">
+                    <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">To become the benchmark of quality in the Indian logistics and relocation industry by integrating smart technology, sustainable practices, and unparalleled customer service into every single shipment we handle.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 reveal group" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-orange-50 text-secondary rounded-full flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary group-hover:text-white transition">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">To provide safe, affordable, and timely relocation solutions. We strive to eliminate the stress of shifting by ensuring 100% transparency, deploying highly trained staff, and treating our clients' belongings as if they were our own.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <h4 class="text-secondary font-semibold uppercase tracking-wider mb-2">Why We Stand Out</h4>
+                <h2 class="text-3xl md:text-4xl font-bold">Our Core Values</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center reveal">
+                    <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center text-3xl text-secondary mb-6 border border-white/20">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Safety First</h4>
+                    <p class="text-gray-400 text-sm">We use military-grade packing materials and strict loading protocols to ensure absolute safety.</p>
+                </div>
+                
+                <div class="text-center reveal" style="transition-delay: 100ms;">
+                    <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center text-3xl text-secondary mb-6 border border-white/20">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Integrity</h4>
+                    <p class="text-gray-400 text-sm">Transparent pricing with zero hidden charges. What we quote is exactly what you pay.</p>
+                </div>
+                
+                <div class="text-center reveal" style="transition-delay: 200ms;">
+                    <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center text-3xl text-secondary mb-6 border border-white/20">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Punctuality</h4>
+                    <p class="text-gray-400 text-sm">Time is money. We strictly adhere to our pickup and delivery schedules without excuses.</p>
+                </div>
+                
+                <div class="text-center reveal" style="transition-delay: 300ms;">
+                    <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center text-3xl text-secondary mb-6 border border-white/20">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Customer Care</h4>
+                    <p class="text-gray-400 text-sm">24/7 dedicated support to keep you updated and anxiety-free during the entire moving process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="bg-[#051124] text-gray-300 pt-16 pb-8 border-t-4 border-secondary">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold font-poppins text-white flex items-center gap-2 mb-6">
+                        <i class="fas fa-truck-fast text-secondary"></i> Surya Packers and movers
+                    </a>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">India's most trusted packing and moving company providing safe, fast, and affordable relocation solutions since 2011.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> About Us</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Gallery</a></li>
+                        <li><a href="index.html#contact" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html#home-relocation" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Home Relocation</a></li>
+                        <li><a href="services.html#office-shifting" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Office Shifting</a></li>
+                        <li><a href="services.html#vehicle-transport" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Vehicle Transport</a></li>
+                        <li><a href="services.html#storage-insurance" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Warehouse Storage</a></li>
+                        <li><a href="services.html#storage-insurance" class="hover:text-secondary transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> Transit Insurance</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Newsletter</h4>
+                    <p class="text-sm text-gray-400 mb-4">Subscribe for offers and moving tips.</p>
+                    <form class="flex mb-6" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Email Address" class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-l-lg focus:outline-none text-white text-sm">
+                        <button type="submit" class="bg-secondary px-4 py-2 rounded-r-lg hover:bg-orange-600 transition"><i class="fas fa-paper-plane text-white"></i></button>
+                    </form>
+                    <div class="w-full h-36 rounded-lg overflow-hidden border border-white/10">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.282657471832!2d81.11426019999999!3d16.7127426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3615646cf0aaef%3A0xc3c26f737017baa8!2sSurya%20Packers%20%26%20Movers%20Eluru!5e0!3m2!1sen!2sin!4v1778444902185!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>© 2026 ZIGZEX IT SERVICES PRIVATE LIMITED.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('navbar');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('glass', 'shadow-md', 'text-gray-800');
+                    navbar.classList.remove('text-white', 'py-4');
+                    navbar.classList.add('py-2');
+                    
+                    document.querySelectorAll('#navbar a').forEach(el => {
+                        if(!el.classList.contains('bg-secondary') && !el.classList.contains('mobile-link') && !el.classList.contains('text-secondary')) {
+                            el.classList.add('text-primary');
+                        }
+                    });
+                } else {
+                    navbar.classList.remove('glass', 'shadow-md', 'text-gray-800', 'py-2');
+                    navbar.classList.add('text-white', 'py-4');
+                    
+                    document.querySelectorAll('#navbar a').forEach(el => {
+                        if(!el.classList.contains('bg-secondary') && !el.classList.contains('mobile-link') && !el.classList.contains('text-secondary')) {
+                            el.classList.remove('text-primary');
+                        }
+                    });
+                }
+            });
+
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Scroll Reveal Animation
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+
+            revealElements.forEach(el => {
+                revealObserver.observe(el);
+            });
+
+            // Fix initial navbar state if page is reloaded halfway down
+            if(window.scrollY > 50) {
+                window.dispatchEvent(new Event('scroll'));
+            }
+        });
+    </script>
+</body>
+</html>
